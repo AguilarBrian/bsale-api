@@ -14,7 +14,7 @@ let port;
 if (process.env.STATUS === 'production') {
     port = process.env.PORT || 4000;
 } else {
-    port = process.env.PORT || 3000;
+    port = process.env.DEV_PORT || 3000;
 }
 
 app.use(cors());
